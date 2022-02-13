@@ -1,10 +1,8 @@
-import React from "react";
-import Description from "/components/Description";
-import common from "/styles/common.module.css";
-import styles from "/styles/Profile.module.css";
 import { Avatar } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
+import React from "react";
+import styles from "/styles/Profile.module.css";
 
 export default function ProfileView(user) {
     return (

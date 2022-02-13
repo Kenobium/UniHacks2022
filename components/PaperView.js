@@ -1,13 +1,13 @@
 import common from '../styles/common.module.css'
 import styles from '../styles/Profile.module.css'
-import Paper from '@mui/material/Paper'
+import Card from '@mui/material/Card'
 
 export default function PaperView() {
     return (
-        <Paper elevation={6}>
+        <Card>
             <div className={styles.papers_container}>
-                <h2>User's papers</h2>
+                <h2>John's papers</h2>
             </div>
-        </Paper>
+        </Card>
     )
 }

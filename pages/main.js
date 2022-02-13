@@ -1,10 +1,8 @@
-import Link from 'next/link'
-import Footer from '/components/Footer'
-import common from '/styles/common.module.css'
-import AppBar from '@mui/material/AppBar'
-import { Toolbar } from '@mui/material';
-import { styled } from '@mui/system'
-import Feed from '/components/Feed'
+import AppBar from '@mui/material/AppBar';
+import { styled } from '@mui/system';
+import Feed from '/components/Feed';
+import Footer from '/components/Footer';
+import common from '/styles/common.module.css';
 
 const NavBar = styled(AppBar)({
     backgroundColor: 'whitesmoke',
@@ -16,7 +14,7 @@ export default function Main() {
     return (
         <div className={common.container}>
             <Feed />
-            <Footer profile/>
+            <Footer profile />
         </div>
     )
 }

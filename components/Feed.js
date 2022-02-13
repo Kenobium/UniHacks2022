@@ -1,5 +1,7 @@
+import Stack from '@mui/material/Stack';
 import { useState } from 'react';
-import Post from '/components/Post';
+import { Post, PostForm } from '/components/Post';
+import styles from '/styles/Feed.module.css';
 
 export default function Feed() {
     const [posts, setPosts] = useState([{
@@ -24,20 +26,11 @@ export default function Feed() {
     }
 
     return (
-        <div className="container">
-            <form onSubmit={handleSubmit}>
-                Profile <input value={profile} onChange={e => {
-                    setProfile(e.target.value);
-                }}/>
-                Subject <input value={subject} onChange={e => {
-                    setSubject(e.target.value);
-                }}/>
-                Content <input value={content} onChange={e => {
-                    setContent(e.target.value);
-                }}/>
-                <button>Submit</button>
-            </form>
-            {posts.map(post => <Post post={post}/>)}
+        <div className={styles.container}>
+            <Stack spacing={4}>
+                <PostForm onSubmit={handleSubmit} profile={profile} subject={subject} content={content} setProfile={setProfile} setSubject={setSubject} setContent={setContent} />
+                {posts.map(post => <Post post={post} />)}
+            </Stack>
         </div>
     )
 }

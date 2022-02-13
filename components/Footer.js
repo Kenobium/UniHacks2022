@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import common from '/styles/common.module.css'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { styled } from '@mui/system';
+import Image from 'next/image';
+import Link from 'next/link';
+import common from '/styles/common.module.css';
 
 const AccountCircle = styled(AccountCircleIcon)({
     color: '#f99',
