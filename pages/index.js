@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../components/Footer'
 import common from '../styles/common.module.css'
 import styles from '../styles/Index.module.css'
 
@@ -30,11 +31,7 @@ export default function Index() {
         </div>
       </main>
 
-      <footer className={common.footer}>
-        <span className={common.logo}>
-          <Link href="/"><Image src="/PNG/logo.png" alt="et al. Logo" width={112} height={39} /></Link>
-        </span>
-      </footer>
+      <Footer />
     </div >
   )
 }

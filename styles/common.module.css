@@ -2,6 +2,22 @@
     padding: 0 2rem;
 }
 
+.navbar {
+    height: 4rem;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar_logo {
+    height: 2rem;
+}
+
 .main {
     min-height: 90vh;
     padding: 4rem 0;
@@ -151,13 +167,15 @@ h2.title {
 
 .footer {
     background-color: #fff;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 10vh;
     border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
+    align-content: center;
 }
 
 .logo {
+    grid-column-start: 2;
     cursor: pointer;
 }
