@@ -1,0 +1,163 @@
+.container {
+    padding: 0 2rem;
+}
+
+.main {
+    min-height: 90vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 97%;
+    height: 86%;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+}
+
+h1.title {
+    font-size: 4rem;
+}
+
+h2.title {
+    font-size: 3rem;
+}
+
+.description {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 1.5rem 0;
+}
+
+.login input {
+    width: 100%;
+}
+
+.signup {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.signup select {
+    grid-column: 1 / 3;
+    width: 95%;
+}
+
+.signup input {
+    width: 90%;
+}
+
+.signup button {
+    grid-column: 1 / 3;
+}
+
+.login input,
+.signup input, 
+.signup select {
+    padding: 0.5rem;
+    margin: 0.8rem 0;
+    padding: 1rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #f99;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.login input:focus,
+.signup input:focus,
+.signup select:focus,
+.login input:focus-visible,
+.signup input:focus-visible
+.signup select:focus-visible {
+    outline: none;
+    border: 1px solid #f99;
+    color: #fff;
+    background-color: #f99;
+}
+
+.login input:focus::placeholder,
+.signup input:focus::placeholder,
+.signup input:focus-visible::placeholder {
+    color: #fff;
+}
+
+.otherAction {
+    color: #f99;
+}
+
+.otherAction:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.4rem 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #f99;
+    color: #f99;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    color: #fff;
+    background-color: #f99;
+}
+
+.footer {
+    background-color: #fff;
+    display: flex;
+    height: 10vh;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
